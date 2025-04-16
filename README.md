@@ -14,19 +14,6 @@ This project is a **deep learning-based web application** that detects lung canc
 
 ---
 
-## 📾 Table of Contents
-
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [Model Architecture](#model-architecture)
-- [Evaluation Metrics](#evaluation-metrics)
-- [Limitations](#limitations)
-- [Future Work](#future-work)
-- [Acknowledgments](#acknowledgments)
-
----
-
 ## 🛠️ Installation
 
 1. **Clone the repository**
@@ -128,7 +115,7 @@ model = models.Sequential([
 
 ## 🙏 Acknowledgments
 
-- **Dataset**: https://drive.google.com/drive/folders/1KFsmq7VjPsJzfHUfFnNtEdLNfWxYOar3?usp=sharing
+- **Dataset**:https://drive.google.com/file/d/1bQTAd0sdoZlOEjZ2O9B3iBi5qonTj4tM/view?usp=sharing
 - **Libraries**: TensorFlow, Keras, OpenCV, Flask, NumPy, Matplotlib
 - Special thanks to all contributors and mentors for their support.
 
