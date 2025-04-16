@@ -128,7 +128,7 @@ model = models.Sequential([
 
 ## 🙏 Acknowledgments
 
-- **Dataset**: [Kaggle - Lung Cancer X-ray Dataset](https://www.kaggle.com/datasets)
+- **Dataset**: [Kaggle - Lung Cancer X-ray Dataset](https://drive.google.com/drive/folders/1KFsmq7VjPsJzfHUfFnNtEdLNfWxYOar3?usp=sharing)
 - **Libraries**: TensorFlow, Keras, OpenCV, Flask, NumPy, Matplotlib
 - Special thanks to all contributors and mentors for their support.
 
