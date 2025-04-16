@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Predict Lung Cancer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('predict') }}">Predict</a>
+        <a href="{{ url_for('recommendations') }}">Recommendations</a>
+    </nav>
+    <div class="container">
+        <h1>Upload an X-ray Image</h1>
+        <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Predict</button>
+        </form>
+        {% if file_path %}
+            <h2>Prediction: {{ result }}</h2>
+            <p>Confidence: {{ confidence }}%</p>
+            <img src="{{ file_path }}" alt="Uploaded Image">
+        {% endif %}
+    </div>
+</body>
+</html>

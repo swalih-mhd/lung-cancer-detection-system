@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home - AI Lung Cancer Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('home') }}" class="active">Home</a>
+        <a href="{{ url_for('predict') }}">Predict</a>
+        <a href="{{ url_for('recommendations') }}">Recommendations</a>
+    </nav>
+
+    <div class="container">
+        <h1>AI-Powered Lung Cancer Detection</h1>
+
+        <div class="content">
+            <div class="text-section">
+                <h2>Understanding Lung Cancer</h2>
+                <p>
+                    Lung cancer is one of the most common and life-threatening diseases worldwide. 
+                    It often remains undetected in early stages due to mild or no symptoms, making 
+                    treatment more challenging when diagnosed late.Early detection is critical 
+                    for increasing survival rates.
+                </p>
+
+                <h2>How Our AI Model Helps</h2>
+                <p>
+                    Our AI-driven lung cancer detection system leverages deep learning models
+                    to analyze chest X-ray images and detect patterns that indicate the presence of 
+                    cancerous cells. The model is trained to provide fast, accurate, and non-invasive 
+                    screening, assisting medical professionals in early-stage diagnosis.
+                </p>
+
+                <h2>Why Use AI for Early Detection?</h2>
+                <ul class="features">
+                    <li>✔️ High Precision – Advanced AI algorithms ensure accurate detection.</li>
+                    <li>✔️ Instant Diagnosis – Get real-time results within seconds.</li>
+                    <li>✔️ Non-Invasive – No need for complex procedures, just upload an X-ray.</li>
+                    <li>✔️ Early Detection Saves Lives – Timely intervention improves recovery.</li>
+                    <li>✔️ Personalized Health Tips – Receive expert lung care recommendations.</li>
+                </ul>
+
+                <h2>Who Should Get Tested?</h2>
+                <p>
+                    Individuals with a history of smoking, persistent cough, shortness of breath, 
+                    or frequent respiratory infections should undergo regular screenings. Our 
+                    AI-powered tool helps with preliminary detection, but a medical 
+                    consultation is always advised for confirmation.
+                </p>
+
+                <h2>How to Use This System?</h2>
+                <p>
+                    Simply upload a chest X-ray image , and our AI model will analyze it to 
+                    predict whether the image shows signs of lung cancer or not. The result is 
+                    displayed instantly, along with personalized health recommendations
+                    to help maintain lung health.
+                </p>
+                
+                
+                <a href="{{ url_for('predict') }}" class="btn">Get Started</a>
+            </div>
+
+            <div class="image-section">
+                <img src="{{ url_for('static', filename='images/home-banner.jpg') }}">
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
